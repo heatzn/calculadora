@@ -22,23 +22,23 @@ int main() {
 
         cin >> resp;
 
-        switch (resp)
+        switch (resp) // Considera o input do usuario
         {
-        case 1:
+        case 1: // Calcular Idade
             cout << "Opção 1 selecionada" << endl;
             cout << "Digite o dia de seu nascimento: " << endl;
             cin >> diaNasc;
 
-            if (diaNasc < 32 && diaNasc > 0) {
+            if (diaNasc < 32 && diaNasc > 0) { // Filtro de Input
                 cout << "Digite o mes de seu nascimento: " << endl;
                 cin >> mesNasc;
 
-                if (mesNasc < 13 && mesNasc > 0) {
+                if (mesNasc < 13 && mesNasc > 0) { // Filtro de Input
                     cout << "Digite o ano de seu nascimento: " << endl;
                     cin >> anoNasc;
 
-                    if (anoNasc > 0 && anoNasc < 2023) {
-
+                    if (anoNasc > 0 && anoNasc < 2023) { 
+                        // Declarando variaveis para o sumario
                         int aIdade = 2023 - anoNasc;
                         int mIdade = aIdade * 12;
                         int weekIdade = mIdade * 4;
